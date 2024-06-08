@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#upper-sec {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    border-bottom: 2px solid white;
+    
+}
+
+#upper-sec button {
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+#upper-sec h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#upper-sec p {
+    color: white;
+}
+
+
+#lower-sec {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+#first-sec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#first-sec input {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 3rem;
+    
+}
+
+#first-sec button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#second-sec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-sec p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.guessbutton {
+    border: 2px solid white;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 245px;
+}
