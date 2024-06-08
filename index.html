@@ -10,7 +10,7 @@
     <div id="main">
       <!-- Uper Section -->
       <div id="upper-sec">
-        <button>Again</button>
+        <button onclick="again()">Again</button>
         <h1>Guess My Number</h1>
         <p>Between 1 and 20</p>
         <div class="guessbutton">
@@ -23,12 +23,12 @@
       <!-- Lower Section -->
       <div id="lower-sec">
         <div id="first-sec">
-          <input type="number" name="" id="input" />
+          <input type="number" name="" id="input" maxlength="2"/>
           <button id="check" onclick="checkHandler()">Check</button>
         </div>
 
         <div id="second-sec">
-          <p>Start guessing . . .</p>
+          <p id="paigham">Start guessing . . .</p>
           <p>score: <span id="score">20</span></p>
           <p>High Score: <span id="hs">0</span></p>
         </div>
