@@ -17,15 +17,21 @@ function checkHandler () {
    if (guessNumber == userInput) {
     display.innerHTML = guessNumber
     paigham.innerHTML = 'Wooo "You Won"'
-    highScore.innerHTML = guessNumber;
-    document.body.style.backgroundColor = "red";    
+    highScore.innerHTML = +score.innerHTML + 1;
+    document.body.style.backgroundColor = "green";   
+    setTimeout(() => {
+        document.body.style.backgroundColor = "black";
+    }, 3000) 
     score.innerHTML = +score.innerHTML + 1;
 
    } else if (userInput < guessNumber) {
     display.innerHTML = '?'
     paigham.innerHTML = 'Ooops, "very Low"'
     score.innerHTML = +score.innerHTML - 1;
-    document.body.style.backgroundColor = "red"
+    document.body.style.backgroundColor = "red";
+    setTimeout(() => {
+        document.body.style.backgroundColor = "black";
+    }, 3000)
 
 
    } else if (userInput > guessNumber) {
@@ -33,6 +39,9 @@ function checkHandler () {
     paigham.innerHTML = 'Ooops, "very High"'
     score.innerHTML = +score.innerHTML - 1;
     document.body.style.backgroundColor = "red"
+    setTimeout(() => {
+        document.body.style.backgroundColor = "black";
+    }, 3000)
 
    }
 }
